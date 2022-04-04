@@ -1,5 +1,10 @@
 html {
   font-size: 62.5%;
+
+  @include respond(sm) {
+    font-size: 50%;
+  }
+
 }
 
 body {
@@ -23,12 +28,37 @@ a:visited {
 .heading-1 {
   text-transform: uppercase;
 
+  &--36 {
+    text-transform: none;
+    font-family: "Niramit", sans-serif;
+    color: rgb(250, 249, 209);
+    font-size: 3.6rem;
+    text-align: center;
+    line-height: 1;
+    text-shadow: rgb(0 0 0) 1px 2px 3px;
+  }
+
   &--30 {
     font-size: 3rem;
     font-weight: bold;
 
     letter-spacing: 1px;
     line-height: 1;
+  }
+
+  &--28 {
+    color: rgb(250, 249, 209);
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  &--53 {
+    font-family: "Bahianita", sans-serif;
+    font-size: 5.3rem;
+    text-align: center;
+    color: rgb(66, 66, 66);
   }
 
   &--blue {
@@ -123,6 +153,49 @@ a:visited {
     font-size: 16px;
     line-height: 1.6;
   }
+  &--4 {
+    font-family: "Sriracha", cursive;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.4;
+    text-shadow: rgb(0 0 0) 1px 2px 3px;
+  }
+  &--5 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-shadow: rgb(0 0 0) 2px 2px 3px;
+
+
+
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &--6 {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(246, 90, 58);
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+  }
+
+  &--7 {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
   &--shadow {
     font-family: "Oswald", sans-serif;
     color: $color-white;
@@ -179,8 +252,16 @@ a:visited {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-right {
   text-align: right;
+}
+
+.text-vertical-align {
+  vertical-align: middle;
 }
 
 .font-weight-bold {
