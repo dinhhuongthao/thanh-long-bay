@@ -1,0 +1,200 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+.heading-1 {
+  text-transform: uppercase;
+
+  &--30 {
+    font-size: 3rem;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+
+  &--blue {
+    background-image: url("../images/svg/heading-1-blue.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    display: inline-block;
+    padding: 1rem 7rem;
+    
+    font-family: "Oswald", sans-serif;
+    color: $color-white;
+    font-size: 2.9rem;
+    line-height: 1.6;
+  }
+
+  &--cursive {
+    font-family: "Lobster", cursive;
+    color: $color-dark-1;
+    font-size: 3.8rem;
+    text-align: center;
+    line-height: 1;
+  }
+
+  &--quote {
+    font-family: "Dancing Script", cursive;
+    color: rgb(66, 66, 66);
+    font-size: 4.2rem;
+    text-align: center;
+    line-height: 1;
+  }
+}
+
+.heading-3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.6;
+
+  &--blue {
+    font-weight: bold;
+    color: rgb(22, 255, 239);
+  }
+  &--red {
+    font-weight: bold;
+    color: rgb(246, 90, 58);
+  }
+
+  &--1 {
+    font-size: 2.2rem;
+    color: rgb(21, 77, 62);
+    font-weight: bold;
+  }
+
+  &--2 {
+    text-transform: uppercase;
+    color: rgb(5, 34, 74);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+
+.heading-4 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.6;
+
+  &--1 {
+    color: rgb(22, 99, 199);
+  }
+}
+
+.para {
+  &--1 {
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    color: $color-dark-2;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+  &--2 {
+    color: rgb(36, 36, 36);
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  &--3 {
+    color: rgb(250, 249, 209);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  &--shadow {
+    font-family: "Oswald", sans-serif;
+    color: $color-white;
+    font-size: 2.1rem;
+    line-height: 1.6;
+    text-shadow: $color-black 1px 2px 3px;
+  }
+  &--hightlight {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 1.4;
+    display: inline;
+    background-color: rgba(253, 255, 0, 0.6);
+  }
+  &--link {
+    font-family: "Muli", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    line-height: 1.2;
+
+    &-1 {
+      color: rgb(0, 98, 236);
+    }
+  }
+
+  &--quote {
+    background: url("https://w.ladicdn.com/s800x400/621b7bccc113db0016ae22aa/nam-group-slogan-20220301153730.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Sriracha", cursive;
+    color: rgb(36, 36, 36);
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.6;
+    padding: 4rem;
+  }
+}
+
+.text-white {
+  color: white;
+}
+
+.text-red {
+  color: rgb(244, 64, 37);
+}
+
+.text-blue {
+  color: rgb(11, 102, 230);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-opensans {
+  font-family: "Open Sans", sans-serif;
+}

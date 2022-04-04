@@ -1,0 +1,324 @@
+.img-card {
+  text-align: center;
+
+  &__img {
+    width: 100%;
+  }
+  &__title {
+    font-family: "Oswald", sans-serif;
+    color: $color-black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+  &__text {
+    margin-top: $spacer;
+    font-family: "Roboto", sans-serif;
+    color: $color-dark-1;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.88);
+  padding: 2rem 3em;
+
+  &__title {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+    margin: 0 -2rem 2rem -2rem;
+
+  }
+  &__input {
+    display: block;
+    background-color: rgba(148, 148, 148, 0.27);
+
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    border-width: 1px;
+    border-radius: 2px;
+
+    padding: 1rem 5px;
+    margin-bottom: .5rem;
+
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    font-size: inherit;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+
+  &--red {
+    background-color: rgb(232, 58, 48);
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  &-radius {
+    border-radius: 5rem;
+    color: white;
+    font-weight: bold;
+
+    &--red {
+      background-image: linear-gradient(180deg, #ff512f, #dd2476);
+    }
+
+    &--blue {
+      background-image: linear-gradient(180deg, #00c6ff, #0072ff);
+    }
+  }
+}
+
+.img-reels {
+  width: 100%;
+  display: flex;
+
+  &__pic {
+    width: calc(100%/7);
+    
+    &:not(:last-child) {
+      padding-right: 1rem;
+    }
+  }
+}
+
+
+.card-radius {
+  text-align: center;
+
+
+  &__img {
+   height: 75%;
+   max-width: 100%;
+   border-radius: 2.4rem;
+   margin-bottom: 2rem;
+
+   transition: all .4s ease;
+
+   &:hover {
+     transform: scale(1.05);
+   }
+  }
+
+  &__btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+   
+    font-family: "Oswald", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+
+    transition: all .4s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &--1 {
+      background: linear-gradient(180deg, #9DFBC8, #F5F186);
+    }
+
+    &--2 {
+      background: linear-gradient(180deg, #4facfe, #00f2fe);
+    }
+
+    &--3 {
+      background: linear-gradient(180deg, #fa709a, #fee140);
+    }
+
+    &--4 {
+      background: linear-gradient(180deg, #ffc3a0, #ffafbd);
+    }
+  }
+
+}
+
+.img-comp {
+  position: relative;
+
+  &__circle {
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+
+    
+    @include center-abs;
+  }
+
+  &__item {
+    display: block;
+
+
+    &--1 {
+      width: 100%;
+      height: 100%;
+    }
+    &--2 {
+      position: absolute;
+      width: 20rem;
+      height: 30%;
+      border-radius: 10rem;
+
+      bottom: 4rem;
+      left: 2rem;
+      z-index: 3;
+    }
+    &--3 {
+      position: absolute;
+      max-width: 40rem;
+      bottom: 3rem;
+      right: 0rem;
+      z-index: 2;
+    }
+  }
+}
+
+.decor-shape {
+  position: absolute;
+
+  &--1 {
+    border-radius: 500px;
+    width: 32rem;
+    height: 32rem;
+    opacity: 0.67;
+    background-color: rgb(21, 77, 62);
+
+  }
+
+  &--2 {
+    border-radius: 500px;
+    width: 11rem;
+    height: 11rem;
+    background-color: rgb(232, 58, 48);
+  }
+
+  &--3 {
+    opacity: 0.9;
+    background-color: rgb(19, 137, 106);
+    border-radius: none;
+    border-bottom-left-radius: 250px;
+  }
+}
+
+.pill-card {
+  width: 100%;
+  height: 17rem;
+  border-radius: 50rem;
+  box-shadow: rgba($color-black, .2) 2px 2px 2rem;
+  padding: 0 3rem 2rem 0;
+
+  display: flex;
+
+  transition: all .4s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &__shape {
+    width: 16rem;
+    height: 16rem;
+    min-width: 17rem;
+    border-radius: 50rem;
+    box-shadow: rgb(0 0 0 / 25%) -2px 11px 1rem;
+
+    overflow: hidden;
+  }
+  &__img {
+    width: 100%;
+    max-height: 100%;
+  }
+  &__content {
+    color: rgb(5, 34, 74);
+    text-align: left;
+    padding: 3rem 0rem 0 2rem;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+
+}
+
+
+
+
+
+
+.horizontal-line {
+  display: inline-block;
+
+  &--short {
+    width: 10rem;
+  }
+  
+  &::after {
+    content: "";
+    display: inline-block;
+    background-color: currentColor;
+    width: 100%;
+    height: 1.5px;
+    vertical-align: middle;
+  }
+}
+
+
+.vertical-line {
+  display: inline-block;
+  position: relative;
+  margin-right: 2rem;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    content: "";
+    display: inline-block;
+    background-color: currentColor;
+    width: 1.5px;
+    height: 100%;
+    vertical-align: middle;
+    color: rgb(22, 199, 158);
+  }
+}

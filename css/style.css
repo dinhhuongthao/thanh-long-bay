@@ -11,17 +11,15 @@ html {
 	box-sizing: border-box;
 }
 
-/* 48.75em = 780px */
-@media screen and (max-width: 48.75em) {
-  html {
-    font-size: 50%;
-  }
-}
 
 body {
   font-size: 160%;
 	font-size: 1.6rem;
 	line-height: 1;
+}
+
+section, .footer {
+	padding: 1rem 2rem;
 }
 
 #sec2 {
@@ -54,10 +52,14 @@ body {
 	float: left;
 }
 
-@media screen and (min-width: 48.75em) {
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2);
-  }
+.d-flex {
+	display: flex;
+}
+
+
+
+.flex-1-of-2 {
+	flex-basis: 50%;
 }
 
 
@@ -71,7 +73,7 @@ body {
 #headline2 > * {
 	font-family: "Niramit", sans-serif;
 	color: rgb(250, 249, 209);
-	font-size: 36px;
+	font-size: 3.6rem;
 	text-align: center;
 	line-height: 1;
 	text-shadow: rgb(0 0 0) 1px 2px 3px;
@@ -92,7 +94,7 @@ body {
 #para3 {
 	font-family: "Montserrat", sans-serif;
 	color: rgb(255, 255, 255);
-	font-size: 17px;
+	font-size: 1.7rem;
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.2;
@@ -116,7 +118,7 @@ body {
 #para5 {
 	font-family: "Open Sans", sans-serif;
 	color: rgb(255, 255, 255);
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: bold;
 	text-align: center;
 	line-height: 1.2;
@@ -142,8 +144,8 @@ body {
 }
 .tile .tile__img {
 	border-radius: 3rem;
-	width: 27.2rem;
-	min-height: 22.8rem;
+	width: 100%;
+	min-height: 100%;
 
 	object-fit: cover;
 
@@ -171,17 +173,7 @@ body {
 .footer {
   background-color: rgb(2, 37, 42);
 }
-/* 
-.footer__box {
-  display: flex;
-  padding: 0 10rem;
-  align-items: center;
-  gap: 1.5rem;
-} */
 
-/* .footer__box > * {
-  flex-basis: 50%;
-} */
 
 .footer__list {
   list-style: none;
@@ -195,12 +187,6 @@ body {
   align-items: flex-end;
   grid-column-gap: 3rem;
 
-}
-
-@media screen and (max-width: 48.75em) {
-  .footer__list {
-    text-align: center;
-  }
 }
 
 .footer__list * {
@@ -235,6 +221,7 @@ body {
   font-family: "Quicksand", sans-serif;
   letter-spacing: 1px;
   line-height: 1.6;
+	word-break: break-word;
 }
 
 
@@ -279,4 +266,40 @@ body {
 
 .text-align-center {
 	text-align: center !important;
+}
+
+/* MEDIA QUERY */
+
+/* 20em = 320px */
+
+
+
+/* 48.75em = 780px */
+@media screen and (max-width: 48.75em) {
+  html {
+    font-size: 50%;
+  }
+	.row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2);
+  }
+	.footer__list {
+    text-align: center;
+		grid-template-columns: 100%;
+  }
+	.d-block-md {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 20em) {
+  html {
+    font-size: 37.5%;
+  }
+	.container {
+		width: 100%;
+	}
+	.tile {
+		grid-template-columns: 1fr;
+	}
+
 }

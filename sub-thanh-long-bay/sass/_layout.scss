@@ -1,0 +1,126 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.bg-light {
+  background: linear-gradient(180deg, #f5f7fa, #c3cfe2);
+}
+
+.section {
+  padding: 4rem 5rem;
+  
+  &-1 {
+    background-image: url("/images/bg1.png");
+  }
+  
+  &-2 {
+    background-image: radial-gradient(circle, rgba(#bdc3c7, .75), rgba(#2c3e50, .75)), url(https://w.ladicdn.com/s1440x2539/621b7bccc113db0016ae22aa/tong-the-3d-thanh-long-bay_nhe-20220302150348.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  &-3 {
+    background-image: $color-blue-overlay, url(https://w.ladicdn.com/s1440x847/621b7bccc113db0016ae22aa/kiddufvd20220304073059.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    font-family: "Open Sans", sans-serif;
+  
+  }
+  
+  &-5 {
+    background: linear-gradient(180deg, #96deda, rgba(255, 255, 255, 1.0));
+  }
+  
+  &-6 {
+    position: relative;
+  
+    background: radial-gradient(circle, #f5f7fa, rgba(209, 227, 250, 1));
+  
+    font-family: "Open Sans", sans-serif;
+    color: rgb(36, 36, 36);
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 1.6;
+
+  &-8 {
+    background: url("https://w.ladicdn.com/s1440x2752/621b7bccc113db0016ae22aa/zjovgyoe20220304073341.jpg");
+
+  }
+}
+
+  &__shape-1 {
+    top: 15rem;
+    left: -10rem;
+  }
+
+  &__shape-2 {
+    top: 2rem;
+    left: 22rem;
+    z-index: 0;
+  }
+}
+
+////////////////////
+.d-block {
+  display: block;
+}
+
+////////////////////
+// FLEX
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-basis-1-of-3 {
+  // min-width: calc(100% / 3);
+  flex-basis: calc(100%/3);
+}
+
+.flex-row-gap-2 {
+  row-gap: $spacer*2;
+}
+
+.flex-column-gap-2 {
+  column-gap: $spacer*2;
+}
+
+.flex-column-gap-3 {
+  column-gap: $spacer*3;
+}
+
+.flex-column-gap-8 {
+  column-gap: $spacer*8;
+}
+.flex-column-gap-1 {
+  column-gap: $spacer;
+}
+
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+
+// 20em = 320px
+// 48em = 768px md
+// 62em = 992px lg
+@media screen and (max-width: 62em) {
+  .flex-lg-wrap {
+    flex-wrap: wrap;
+  }  
+}
+@media screen and (max-width: 48em) {
+  .flex-md-wrap {
+    flex-wrap: wrap;
+  }  
+}
