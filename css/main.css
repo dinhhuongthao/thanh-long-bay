@@ -246,11 +246,14 @@ $breakpoint arguement choices:
   width: 100%;
   display: flex;
 }
-.img-reels__pic {
-  width: 14.2857142857%;
+.img-reels__wrapper {
+  flex: 1;
 }
-.img-reels__pic:not(:last-child) {
+.img-reels__wrapper:not(:last-child) {
   margin-right: 1rem;
+}
+.img-reels__pic {
+  width: 100%;
 }
 
 .card-radius {
@@ -375,12 +378,13 @@ $breakpoint arguement choices:
 }
 
 .pill-card {
-  width: 100%;
+  display: flex;
+  max-width: 45rem;
   height: 17rem;
   border-radius: 50rem;
   box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2rem;
   padding: 0 3rem 2rem 0;
-  display: flex;
+  margin-bottom: 3rem;
   transition: all 0.4s ease;
 }
 .pill-card:hover {
@@ -509,7 +513,7 @@ $breakpoint arguement choices:
 }
 
 .container-md {
-  max-width: 900rem;
+  max-width: 96rem;
   margin: 0 auto;
 }
 
@@ -1068,6 +1072,10 @@ a:visited {
 
 .mr-2 {
   margin-right: 2rem !important;
+}
+
+.mr-3 {
+  margin-right: 3rem !important;
 }
 
 .ml-5 {
