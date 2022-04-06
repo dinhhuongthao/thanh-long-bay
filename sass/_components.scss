@@ -3,6 +3,7 @@
   width: 31.7rem;
   text-align: center;
   display: block;
+  height: fit-content;
 
   &__img {
     text-align: center;
@@ -12,6 +13,7 @@
   }
   &__content {
     width: 100%;
+    height: fit-content;
   }
 
   &__title {
@@ -368,6 +370,10 @@
 
   &--short {
     width: 10rem;
+  }
+
+  &--100 {
+    width: 100%;
   }
   
   &::after {

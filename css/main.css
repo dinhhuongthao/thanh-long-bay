@@ -125,6 +125,9 @@ $breakpoint arguement choices:
   width: 31.7rem;
   text-align: center;
   display: block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .img-card__img {
   text-align: center;
@@ -134,6 +137,9 @@ $breakpoint arguement choices:
 }
 .img-card__content {
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .img-card__title {
   font-family: "Oswald", sans-serif;
@@ -436,6 +442,9 @@ $breakpoint arguement choices:
 }
 .horizontal-line--short {
   width: 10rem;
+}
+.horizontal-line--100 {
+  width: 100%;
 }
 .horizontal-line::after {
   content: "";
